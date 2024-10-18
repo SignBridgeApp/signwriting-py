@@ -4,6 +4,7 @@ from signwriting.formats.fsw_to_sign import fsw_to_sign
 from signwriting.formats.sign_to_fsw import sign_to_fsw
 from signwriting.types import Sign, SignSymbol
 from signwriting.visualizer.visualize import get_symbol_size
+from typing import List
 
 
 def all_axis(_sign, axis):
@@ -59,7 +60,7 @@ def join_signs_horizontal(*fsws: str, spacing: int = 0):
 Point = namedtuple("Point", ["x", "y"])
 
 
-def sign_from_symbols(symbols: list[SignSymbol], fix_x=True, fix_y=True) -> Sign:
+def sign_from_symbols(symbols: List[SignSymbol], fix_x=True, fix_y=True) -> Sign:
     min_p = Point(x=999, y=999)
     max_p = Point(x=0, y=0)
     for symbol in symbols:

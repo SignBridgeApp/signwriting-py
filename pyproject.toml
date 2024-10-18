@@ -21,6 +21,9 @@ mouthing = [
     "epitran",
     "g2pk"
 ]
+server = [
+    "flask",
+]
 
 [tool.yapf]
 based_on_style = "google"

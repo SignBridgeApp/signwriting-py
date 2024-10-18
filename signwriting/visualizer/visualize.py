@@ -1,3 +1,5 @@
+# pylint: disable=unnecessary-lambda-assignment
+
 from functools import lru_cache
 from pathlib import Path
 from typing import Tuple, List, Literal
