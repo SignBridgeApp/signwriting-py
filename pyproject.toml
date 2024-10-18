@@ -22,7 +22,9 @@ mouthing = [
     "g2pk"
 ]
 server = [
+    # For API server
     "flask",
+    "Flask-RESTful",
 ]
 
 [tool.yapf]

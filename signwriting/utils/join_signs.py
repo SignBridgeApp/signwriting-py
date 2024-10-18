@@ -1,10 +1,10 @@
 from collections import namedtuple
+from typing import List
 
 from signwriting.formats.fsw_to_sign import fsw_to_sign
 from signwriting.formats.sign_to_fsw import sign_to_fsw
 from signwriting.types import Sign, SignSymbol
 from signwriting.visualizer.visualize import get_symbol_size
-from typing import List
 
 
 def all_axis(_sign, axis):
